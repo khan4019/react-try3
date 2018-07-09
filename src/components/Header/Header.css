@@ -1,0 +1,22 @@
+.header img{
+    height: 80px;
+}
+.header .menu{
+    line-height: 40px;
+    background-color: black;
+    color: white;
+    text-align: left;
+}
+.menu a{
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    padding: 5px;
+}
+.menu a:hover{
+    background-color: lightgray;
+}
+.menu a:visited{
+    color: white;
+}
