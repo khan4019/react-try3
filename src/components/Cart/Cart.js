@@ -6,9 +6,12 @@ class Cart extends Component {
         const cart = this.props.cart;
         let price = 0;
         let shipping = 0;
+        let totalQuantity = 0;
         cart.forEach(item => {
-            price += item.price;
+            const quantity = (item.quantity || 1);
+            price += item.price * quantity;
             shipping += item.shipping;
+            totalQuantity += quantity;
         });
         const beforeTax = price + shipping;
         const tax = beforeTax * 0.1;
@@ -16,7 +19,7 @@ class Cart extends Component {
         return (
             <div className="cart-container">
                 <h5>Order Summary</h5>
-                <p>Item Ordered: {cart.length}</p>
+                <p>Item Ordered: {totalQuantity}</p>
                 <table>
                     <tbody>
                         <tr>
@@ -42,7 +45,7 @@ class Cart extends Component {
                     </tbody>
                 </table>
                 <br/>
-                <button>Order Review</button>
+                {this.props.children}
             </div>
         );
     }
