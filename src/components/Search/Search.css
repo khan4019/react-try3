@@ -1,0 +1,10 @@
+.search-container{
+    background-color: black;
+    height: 40px;
+}
+
+.search-container input{
+    line-height: 30px;
+    font-size: 20px;
+    width: 60%;
+}
