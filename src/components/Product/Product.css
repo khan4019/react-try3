@@ -1,5 +1,8 @@
 .product-container{
     display: flex;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
 }
 .product-container img{
     margin-right: 10px;

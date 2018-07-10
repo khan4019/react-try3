@@ -1,0 +1,11 @@
+.cart-container{
+    margin-left: 5px;
+    
+}
+.cart-container table{
+    font-size: 12px;
+}
+
+td:last-of-type{
+    text-align: right;
+}
